@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tools | Li News & Media Hub</title>
+  <link rel="stylesheet" href="tools.css" />
+</head>
+
+<body>
+
+  <!-- [T-01] Top Header -->
+  <header class="tools-header">
+    <div class="left">
+      <button class="back-btn" onclick="goBack()">← Back</button>
+      <h1 class="title">Tools <span>টুলস</span></h1>
+    </div>
+
+    <div class="right">
+      <a class="home-btn" href="../index.html">🏠 Home</a>
+    </div>
+  </header>
+
+  <!-- [T-02] Search + Filter Tabs -->
+  <section class="tools-toolbar">
+    <input id="toolSearch" type="text" placeholder="Search tools / টুলস খুঁজুন..." autocomplete="off" />
+    <div id="categoryTabs" class="tabs"></div>
+  </section>
+
+  <!-- [T-03] Tools Container -->
+  <main class="tools-container">
+    <div id="toolsContent" class="tools-grid"></div>
+  </main>
+
+  <!-- [T-04] Footer -->
+  <footer class="tools-footer">
+    <p>© <span id="year"></span> Li News & Media Hub — Tools</p>
+  </footer>
+
+  <script src="tools.js"></script>
+</body>
+</html>

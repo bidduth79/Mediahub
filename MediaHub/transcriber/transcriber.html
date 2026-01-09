@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎙️ MediaHub Transcriber</title>
+  <link rel="stylesheet" href="transcriber.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <h1>🎙️ MediaHub Transcriber</h1>
+    <a class="backbtn" href="../index.html">⬅ Back to MediaHub</a>
+  </header>
+
+  <div class="container">
+
+    <!-- LEFT PANEL -->
+    <div class="left">
+      <h2>📌 Upload File</h2>
+
+      <input type="file" id="fileInput" accept="audio/*,video/*"/>
+
+      <div class="options">
+        <label>
+          <input type="checkbox" id="timestamp" checked />
+          ⏱️ Timestamp সহ
+        </label>
+      </div>
+
+      <button id="btnTranscribe">▶️ Transcribe</button>
+
+      <div id="status">Ready ✅</div>
+      <div id="progressWrap">
+        <div id="progressBar"></div>
+      </div>
+
+      <button id="btnCopy">📋 Copy Output</button>
+      <button id="btnDownload">💾 Download Output</button>
+
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div class="right">
+      <h2>📝 Output</h2>
+      <textarea id="output" placeholder="এখানে ট্রান্সক্রিপ্ট আসবে..." readonly></textarea>
+    </div>
+
+  </div>
+
+  <script src="transcriber.js"></script>
+</body>
+</html>
